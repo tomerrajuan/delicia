@@ -1,0 +1,73 @@
+.welcome {
+    @include flex-column;
+    height: 85vh;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    &__logo {
+        height: 310px;
+        width: auto;
+        margin-bottom: 5vh;
+    }
+    &__video {
+        opacity: 0.4;
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        mix-blend-mode: overlay;
+    }
+    &--links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        a {
+            font-size: 1.2rem;
+            color: $purple;
+        }
+        &__box {
+            height: 100px;
+            width: 300px;
+            background-color: $white;
+            margin: 10px;
+            border-radius: 15px;
+            opacity: 0.8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                background-color: $athens-grey;
+            }
+        }
+    }
+    &--icons {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        z-index: 10;
+        width: 200px;
+        margin-top: 5vh;
+        i {
+            color: $purple;
+            font-size: 75px;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 900px) {
+    .welcome__logo {
+        height: fit-content;
+        width: 80vw;
+    }
+    .welcome--icons {
+        i {
+            font-size: 55px;
+        }
+    }
+}

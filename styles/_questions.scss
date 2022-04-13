@@ -1,0 +1,17 @@
+.questions-section {
+    @include flex-column;
+    align-items: center;
+    width: 100vw;
+    h1 {
+        margin-top: 10px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+}
+
+.jumbotron-questions {
+    width: 70vw;
+    margin-bottom: 0 !important;
+    padding: 15px 0 !important;
+}

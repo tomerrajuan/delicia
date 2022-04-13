@@ -1,0 +1,32 @@
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    &__info {
+        padding: 20px;
+        max-width: 45vw;
+        a {
+            color: $purple;
+        }
+    }
+    &__image {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1105px) {
+    .about {
+        &__info {
+            max-width: 70vw;
+        }
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .about {
+        &__info {
+            max-width: 90vw;
+        }
+    }
+}

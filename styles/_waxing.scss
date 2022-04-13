@@ -1,0 +1,111 @@
+    .waxing {
+        width: 100vw;
+        @include flex-column;
+        justify-content: center;
+        h3 {
+            color: $purple;
+            margin-bottom: 2vh;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .slick {
+            align-self: center;
+            width: 100vw;
+            margin: 1vh 0;
+        }
+    }
+    
+    .services {
+        @include flex-column;
+        justify-content: space-between;
+        margin-bottom: 8vh;
+        &--info {
+            width: 45vw;
+        }
+        .slick {
+            margin-bottom: 3vh;
+            opacity: 0.6;
+        }
+    }
+    
+    .jumbotron-waxing {
+        background-color: $white !important;
+        padding-bottom: 0 !important;
+        width: 90vw !important;
+        p {
+            font-size: 15px;
+        }
+    }
+    
+    .lead span {
+        color: $purple;
+        font-weight: bold;
+    }
+    
+    .prices {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        &--list {
+            align-items: center;
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        &--li {
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            line-height: 1;
+            .price {
+                color: $purple;
+                font-size: 15px;
+            }
+        }
+    }
+    
+    .ink {
+        border-top: 1px solid $purple;
+        border-bottom: 1px solid $purple;
+        padding: 10px 5px;
+        width: 60vw;
+        margin-left: 20vw;
+    }
+    
+    @media screen and (min-width: 300px) and (max-width: 1000px) {
+        .services {
+            @include flex-column;
+            justify-content: space-between;
+            margin-bottom: 8vh;
+            &--info {
+                width: 45vw;
+            }
+            .slick {
+                margin-bottom: 3vh;
+                img {
+                    height: 350px;
+                }
+            }
+        }
+        .prices {
+            &__image {
+                width: 100vw;
+                margin-bottom: 3vh;
+            }
+            &--list {
+                @include flex-column;
+                align-items: center;
+                width: 100vw;
+                margin-bottom: 60px;
+            }
+            &--li {
+                width: 90vw;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .ink {
+            border-top: 1px solid $purple;
+            border-bottom: 1px solid $purple;
+            padding: 10px 5px;
+        }
+    }

@@ -1,0 +1,55 @@
+.menu-nails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1vh;
+}
+
+.jumbotron {
+    background-color: $white !important;
+    padding-top: 30px !important;
+}
+
+.jumbotrons {
+    max-width: 45vw;
+}
+
+.jumbotron-manikure {
+    padding: 10px;
+    h3 {
+        font-size: 19px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+
+.lead {
+    margin-bottom: 0 !important;
+}
+
+th {
+    color: $purple;
+}
+
+.table {
+    line-height: 0.7;
+    td {
+        padding: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1380px) {
+    .table {
+        line-height: 1.2;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .jumbotrons {
+        max-width: 90vw;
+    }
+    .table {
+        line-height: 1.5;
+    }
+}

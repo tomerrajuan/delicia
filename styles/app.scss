@@ -1,0 +1,43 @@
+@import "./_mixin.scss";
+@import "./_navbar.scss";
+@import "./_welcome.scss";
+@import "./_waxing";
+@import "./_nails";
+@import "./_about";
+@import "./_comments";
+@import "./_questions";
+@import "./_contact";
+html {
+    box-sizing: border-box;
+    padding: 0 !important;
+}
+
+ul {
+    padding-left: 0;
+}
+
+h3 {
+    color: $purple;
+    margin-bottom: 5vh;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h1 {
+    color: $purple;
+    text-align: center;
+    margin: 1vh 0 !important;
+    font-size: 20px;
+}
+
+footer {
+    display: flex !important;
+    align-items: flex-end;
+    justify-content: center;
+    height: 50px;
+    padding: 0 10px;
+    background-color: $athens-grey;
+    p {
+        margin-right: 5px;
+    }
+}

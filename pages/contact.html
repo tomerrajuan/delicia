@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>delicia-waxing-brazil</title>
+    <link rel="shortcut icon" type="image/jpg" href="../public/images/logo.png" />
+    <link rel="stylesheet" href="../styles/app.css">
+    <!-- font awsome for icons -->
+    <script src="https://kit.fontawesome.com/1b14eb9ba9.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#"><img src="../public/images/logo.png" height="60px" /></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../startseite.html">Startseite </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./waxing.html">Waxing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./nails.html">Nails</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">Über uns</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./comments.html">Kundenmeinungen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./questions.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  active" href="./contact.html">Kontakt & Anfahrt  <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <h1>Kontaktiere Uns</h1>
+
+    <main class="contact-section">
+        <div class="contact--box">
+            <h1>Filiale Friedrichshain</h1>
+            <div>
+                <p>Delicia Waxing Brasil<br> Krossener Strasse 28<br> 10245 Berlin</p>
+                <div id="mapid1"></div>
+                <div class="contact--box__info">
+                    <div class="contact--box__info-contact">
+                        <p>Telefon:</p>
+                        <h3>030/75547723</h3>
+                        <p>Handy:</p>
+                        <h3>0171/77 24 504</h3>
+                        <h3> (Anrufen/WhatsApp/SMS)</h3>
+                        <p>Mail:</p>
+                        <h3>info@delicia-waxing-brasil.de</h3>
+                    </div>
+                    <div class="contact--box__info-contact">
+                        <p><strong>Behandlungszeiten</strong></p>
+                        <h3>– nur mit Termin –</h3>
+                        <div class="contact--info__box">
+                            <p>Dienstag bis Freitag:</p>
+                            <h3> 11 – 20 Uhr</h3>
+                        </div>
+                        <div class="contact--info__box">
+                            <p>Samstag:</p>
+                            <h3>10 – 18 Uhr</h3>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="contact--box">
+            <h1>Filiale Kreuzberg</h1>
+            <div>
+                <p>Delicia Waxing Brazil<br> Falckensteinstraße 38<br> 10997 Berlin</p>
+                <div id="mapid2"></div>
+                <div class="contact--box__info">
+                    <div class="contact--box__info-contact">
+                        <p>Telefon:</p>
+                        <h3>030 / 9841 5404</h3>
+                        <p>Handy:</p>
+                        <h3>0176 / 3274 5306</h3>
+                        <h3> (Anrufen/WhatsApp/SMS)</h3>
+                        <p>Mail:</p>
+                        <h3>info@delicia-waxing-brasil.de</h3>
+                    </div>
+                    <div class="contact--box__info-contact">
+                        <p><strong>Behandlungszeiten</strong></p>
+                        <h3>– nur mit Termin –</h3>
+                        <div class="contact--info__box">
+                            <p>Dienstag bis Freitag:</p>
+                            <h3>10 – 19 Uhr</h3>
+                        </div>
+                        <div class="contact--info__box">
+                            <p>Samstag:</p>
+                            <h3>10 – 18 Uhr</h3>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>
+            all rights reserved © 2020 Delicia Waxing Brazil
+        </p>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script src="../script/map.js"></script>
+</body>
+
+</html>
